@@ -23,11 +23,19 @@ With your knowledge of machine learning and neural networks, you’ll use the fe
         - 2nd layer - 30, "sigmoid"
         - Output layer - 1, "sigmoid"
 - Were you able to achieve the target model performance?
-    -  Despite several tries, I was unable to raise the accuracy above 0.728
+    -  Yes, on the fourth try I was able to bring the accuracy to 0.783
 - What steps did you take in your attempts to increase model performance?
     - Attempt One: I added another hidden layer and changed activation type
     - Attempt Two: I raised the number of epochs
     - Attempt Three: I increased the number of neurons per layer
+    - Attempt Four: I changed the preprocessing of the data. Essentially, instead of simply removing the "NAME" column, I removed any "NAME" that appeared less than 10 times. Other values such as number of layers and neurons remained the same as the initial optimization attempt (Attempt One)
 
 ## Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
 
+Overall, the model was able to achieve an accuracy of 78%. This means it will correctly classify the data 78% of the time. 
+
+### Alternative Method
+
+This model worked relatively well and provided close to 80% accuracy. 
+
+However, an alternative approach could be to use the random forest model. This algorithim generates a "forest" of decision trees, combining them to produce more accurate predictions. The random forest model is well suited for classification purposes, so would be a good alternative.
